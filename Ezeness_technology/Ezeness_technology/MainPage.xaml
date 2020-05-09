@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ezeness_technology.MainPage">
+    <ContentPage Title="one">
+        <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="page1"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="two">
+        <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="page2"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="three">
+        <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="page3"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+       FlyoutBehavior="Disabled"
+       xmlns:local="clr-namespace:Ezeness"
+             x:Class="Ezeness.MainPage">
+
+    <Shell.FlyoutHeader>
+        <StackLayout>
+            <Label Text="ee"/>
+            <Button Text="12" Clicked="qwe"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem>
+
+        <Tab Title="Home" Icon="home.png">
+            <ShellContent>
+                <local:home></local:home>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Compare" Icon="compare.png">
+            <ShellContent>
+                <local:compare></local:compare>
+            </ShellContent>
+        </Tab>
+        
+
+    </FlyoutItem>
+
+
+</Shell>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eze_Basket.category">
+    
+   
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="settings"  IconImageSource="user.png" Priority="2" Order="Secondary">
+            </ToolbarItem>
+        </ContentPage.ToolbarItems>
+        <Shell.TitleView>
+            <StackLayout Orientation="Horizontal" Spacing="3" Margin="0" Padding="0">
+
+
+            </StackLayout>
+        </Shell.TitleView>
+        <StackLayout Spacing="0" Margin="0" Padding="0">
+
+            <Grid Margin="0" Padding="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+
+                <ScrollView  Grid.Column="0" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HeightRequest="70" Spacing="4" Padding="5" Margin="0">
+                        <Frame CornerRadius="60" HeightRequest="60" WidthRequest="130" Padding="0" Margin="0" BorderColor="LightBlue"  BackgroundColor="LightBlue">
+                            <StackLayout Orientation="Horizontal" Spacing="6" Margin="0" Padding="0">
+                                <Frame x:Name="fr" BorderColor="Black" HeightRequest="55" WidthRequest="55" CornerRadius="55" HorizontalOptions="Start" VerticalOptions="Start" Padding="0" Margin="4">
+                                    <Image Source="grocery.png" HeightRequest="50" WidthRequest="40" Aspect="AspectFill" />
+                                </Frame>
+                                <Label Text="Grocery" FontSize="Small" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="60" HeightRequest="60" WidthRequest="130" Padding="0" Margin="0" BorderColor="LightBlue" BackgroundColor="LightGray">
+                            <StackLayout Orientation="Horizontal" Spacing="6" Margin="0" Padding="0">
+                                <Frame BorderColor="LightGray" HeightRequest="55" WidthRequest="55" CornerRadius="55" HorizontalOptions="Start" VerticalOptions="Start" Padding="0" Margin="4">
+                                    <Image Source="foods.jpg" HeightRequest="50" WidthRequest="50" Aspect="AspectFill" />
+                                </Frame>
+                                <Label Text="Food" FontSize="Small" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="60" BackgroundColor="LightGray" HeightRequest="60" WidthRequest="130" Padding="0" Margin="0" BorderColor="LightBlue">
+                            <StackLayout Orientation="Horizontal" Spacing="6" Margin="0" Padding="0">
+                                <Frame BorderColor="LightGray" HeightRequest="55" WidthRequest="55" CornerRadius="55" HorizontalOptions="Start" VerticalOptions="Start" Padding="0" Margin="4">
+                                    <Image Source="defaultimage.png" HeightRequest="60" WidthRequest="60" Aspect="AspectFill" />
+                                </Frame>
+                                <Label Text="Fasion" FontSize="Small" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="60" BackgroundColor="LightGray" HeightRequest="60" WidthRequest="130" Padding="0" Margin="0" BorderColor="LightBlue">
+                            <StackLayout Orientation="Horizontal" Spacing="6" Margin="0" Padding="0">
+                                <Frame BorderColor="LightGray" HeightRequest="55" WidthRequest="55" CornerRadius="55" HorizontalOptions="Start" VerticalOptions="Start" Padding="0" Margin="4">
+                                    <Image Source="defaultimage.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFill" />
+                                </Frame>
+                                <Label Text="fasion" FontSize="Small" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+
+
+                </ScrollView>
+
+            </Grid>
+
+            
+
+            <ScrollView Grid.Column="0" VerticalScrollBarVisibility="Never" >
+                <StackLayout Margin="4" Padding="0" Spacing="2" x:Name="firststack">
+                <Image x:Name="gify2"  Source="gify2.gif" HorizontalOptions="Fill" HeightRequest="20" IsAnimationPlaying="True"></Image>
+                </StackLayout>
+            </ScrollView>
+            
+        
+        </StackLayout>
+    </ContentPage>
